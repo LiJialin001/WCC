@@ -36,7 +36,5 @@ else
     error(message('MATLAB:modulationMsg:InvalidTypeArg'));
 end
 
-
-
 end
 
