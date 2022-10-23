@@ -31,7 +31,14 @@ elseif type == "dpsk"
             Msg(1+400*(ii-1):400*ii) = -10*SIN1;   % 倒pi
         end
     end
-    
+elseif type == "ask"
+    for ii = 2:(length(inputCodeArray)+1)
+        if(real(inputCodeArray(ii-1)) == 1)
+            Msg(1+400*(ii-1):400*ii) = 10*SIN1;
+        else
+            Msg(1+400*(ii-1):400*ii) = SIN1.*0;  
+        end
+    end
 else
     error(message('MATLAB:modulationMsg:InvalidTypeArg'));
 end
