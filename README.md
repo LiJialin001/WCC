@@ -15,3 +15,15 @@ type： 本次操作类别
 - Fix 修正
 - Mix 多种操作
 msg：附加的说明信息，务必是能让其他人看懂
+
+# 编解码
+采用 Matlab 提供的 enCode 和 deCode 函数
+
+# 载波传输
+目前支持 2FSK、2DPSK
+
+2FSK采用非相干解调、2DPSK采用差分相干解调
+
+详见 modulationMsg 和 demodulationMsg 函数
+
+载波采用频率为1000Hz和500Hz的正弦波
